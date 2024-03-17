@@ -28,6 +28,7 @@ const images = [
 const galleryEl = document.querySelector(`.gallery`);
 const createGallery = (arr) => {
 	return arr.map((img) => {
+		// const liEl = document.createElement(`li`);
 		const imgEl = document.createElement(`img`);
 		imgEl.src = img.url;
 		imgEl.alt = img.alt;
@@ -36,4 +37,5 @@ const createGallery = (arr) => {
 		return imgEl;
 	});
 };
+
 galleryEl.append(...createGallery(images));
