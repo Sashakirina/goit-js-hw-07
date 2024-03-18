@@ -27,8 +27,9 @@ function createBoxes(amount) {
 }
 
 function createMarkup() {
-	if (inputEl.value >= 1 && inputEl.value <= 100) {
-		createBoxes(inputEl.value);
+	const value = Number(inputEl.value);
+	if (value >= 1 && value <= 100) {
+		createBoxes(value);
 	} else {
 		return;
 	}
