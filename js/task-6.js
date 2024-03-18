@@ -39,6 +39,4 @@ destroyBtnEl.addEventListener(`click`, destroyBoxes);
 function destroyBoxes() {
 	container.innerHTML = "";
 	inputEl.value = ``;
-	width = 30;
-	height = 30;
 }
